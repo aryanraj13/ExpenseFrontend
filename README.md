@@ -1,36 +1,183 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Expense Tracker 💸
 
-## Getting Started
+A full-stack Expense Tracker application built using **Go**, **PostgreSQL**, and **Next.js** with **JWT Authentication** and complete expense CRUD functionality.
 
-First, run the development server:
+## 🚀 Live Demo
+
+Frontend: https://expensetrackergo.netlify.app
+
+Backend: https://expensetrackergo.onrender.com
+
+---
+
+# ✨ Features
+
+- 🔐 User Authentication (Register/Login)
+- 🪪 JWT-based Authorization
+- ➕ Add Expenses
+- ✏️ Update Expenses
+- 🗑 Delete Expenses
+- 📊 Expense Summary Analytics
+- 📱 Responsive Modern UI
+- 🌙 Dark Theme Dashboard
+- ☁️ Deployed Frontend & Backend
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+- Next.js
+- React.js
+- Tailwind CSS
+- Axios
+
+## Backend
+- Golang
+- Gorilla Mux
+- PostgreSQL
+- JWT Authentication
+- pgx PostgreSQL Driver
+
+## Deployment
+- Netlify
+- Render
+
+---
+
+# 📂 Folder Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+expense-tracker/
+│
+├── backend/
+│   ├── database/
+│   ├── handlers/
+│   ├── middleware/
+│   ├── models/
+│   └── main.go
+│
+├── frontend/
+│   ├── app/
+│   ├── lib/
+│   └── components/
+│
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# ⚙️ Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Backend `.env`
 
-## Learn More
+```env
+PORT=8080
 
-To learn more about Next.js, take a look at the following resources:
+DATABASE_URL=your_postgresql_database_url
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+JWT_SECRET=your_secret_key
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Frontend `.env.local`
 
-## Deploy on Vercel
+```env
+NEXT_PUBLIC_API_URL=https://your-backend-url.onrender.com
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 🧪 Running Locally
+
+## Clone Repository
+
+```bash
+git clone https://github.com/aryanraj13/ExpenseTrackerGo.git
+```
+
+---
+
+## Backend Setup
+
+```bash
+cd backend
+
+go mod tidy
+
+go run main.go
+```
+
+Backend runs on:
+
+```bash
+http://localhost:8080
+```
+
+---
+
+## Frontend Setup
+
+```bash
+cd frontend
+
+npm install
+
+npm run dev
+```
+
+Frontend runs on:
+
+```bash
+http://localhost:3000
+```
+
+---
+
+# 🔑 API Endpoints
+
+## Authentication
+
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/register` | Register user |
+| POST | `/login` | Login user |
+
+---
+
+## Expenses
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/expenses` | Fetch expenses |
+| POST | `/expenses` | Create expense |
+| PUT | `/expenses/:id` | Update expense |
+| DELETE | `/expenses/:id` | Delete expense |
+| GET | `/expenses/summary` | Expense analytics |
+
+---
+
+# 🔒 Authentication Flow
+
+```text
+Register → Login → JWT Token → Protected Routes → Expense Dashboard
+```
+
+---
+
+# 📈 Future Improvements
+
+- 📅 Monthly Expense Charts
+- 📊 Pie Charts & Graphs
+- 🔎 Search & Filters
+- 📤 Export Expenses
+- 🌍 Multi Currency Support
+- 👤 User Profile Settings
+
+---
+
+# 👨‍💻 Author
+
+Aryan Rajput
+
+GitHub: https://github.com/aryanraj13
+```
