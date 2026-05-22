@@ -8,6 +8,8 @@ Frontend: https://expensetrackergo.netlify.app
 
 Backend: https://expensetrackergo.onrender.com
 
+![Screenshot](public/2.png)
+
 ---
 
 # ✨ Features
@@ -23,6 +25,10 @@ Backend: https://expensetrackergo.onrender.com
 - ☁️ Deployed Frontend & Backend
 
 ---
+
+![Screenshot](public/3.png)
+
+![Screenshot](public/1.png)
 
 # 🛠 Tech Stack
 
